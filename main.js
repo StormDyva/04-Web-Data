@@ -15,24 +15,19 @@ const labels = [
 
 const tracksPurchasedPrGenre = [835, 386, 264, 244, 80, 61, 41, 41, 30, 28];
 
-// De tre genrer med højest værdi.
-const top3 = tracksPurchasedPrGenre.slice(0, 3);
-
-// Forskellig farve på top 3 genrer.
-const backgroundColors = tracksPurchasedPrGenre.map(value => {
-    if (top3.includes(value)) {
-        return 'rgba(255, 99, 132, 0.7)';  // Highlighted bars
-    } else {
-        return 'rgba(54, 162, 235, 0.6)';  // Normal bars
-    }
-});
-const borderColors = tracksPurchasedPrGenre.map(value => {
-    if (top3.includes(value)) {
-        return 'rgba(255, 99, 132, 1)';  // Highlighted borders
-    } else {
-        return 'rgba(54, 162, 235, 1)';  // Normal borders
-    }
-});
+// Farver for hver søjle
+const backgroundColors = [
+    'rgba(255, 99, 132, 0.7)',  // Rock
+    'rgba(255, 99, 132, 0.7)',  // Latin
+    'rgba(255, 99, 132, 0.7)',  // Metal
+    'rgba(75, 192, 192, 0.7)',  // Alternative & Punk
+    'rgba(75, 192, 192, 0.7)',  // Jazz
+    'rgba(75, 192, 192, 0.7)', // Blues
+    'rgba(75, 192, 192, 0.7)', // R&B/Soul
+    'rgba(75, 192, 192, 0.7)',   // Classical
+    'rgba(75, 192, 192, 0.7)',  // Reggae
+    'rgba(75, 192, 192, 0.7)'  // Pop
+];
 
 new Chart(ctx, {
     type: 'bar',
@@ -42,7 +37,6 @@ new Chart(ctx, {
             label: 'Antal musiknumre købt',
             data: tracksPurchasedPrGenre,
             backgroundColor: backgroundColors,
-            borderColor: borderColors,
             borderWidth: 0,
             borderRadius: 2
         }]
@@ -84,11 +78,10 @@ new Chart(ctx, {
             tooltip: {
                 enabled: true
             },
-            // Viser talværdi over top 3 søjler.
             datalabels: {
-                display: function (context) {
-                    const value = context.dataset.data[context.dataIndex];
-                    return top3.includes(value);
+                display: function(context) {
+                    // Viser kun labels for de første 3 søjler
+                    return context.dataIndex < 3;
                 },
                 align: 'end',
                 anchor: 'end',
@@ -101,5 +94,6 @@ new Chart(ctx, {
     },
     plugins: [ChartDataLabels]
 });
+
 
 
