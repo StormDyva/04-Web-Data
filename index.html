@@ -8,13 +8,50 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
 </head>
+
 <body>
-<h1>velkommen!</h1>
+
+<header>
+
+<h3>CHINOOK</h3>
+
+</header>
 
 <main>
+
+    <!--Overskift-->
+    <h1>CHINOOK</h1>
+
+    <!--canvas, graf1--->
     <div>
-        <canvas id="chart"></canvas>
+        <canvas1 id="chart"></canvas1>
     </div>
+    <!--canvas, graf2--->
+    <div>
+        <canvas2 id="chart"></canvas2>
+    </div>
+
+    <!-- Sektion 1 -->
+    <section class="graf-sektion">
+        <div class="tekst">
+            <h2>Top 10 mest købte genrer</h2>
+            <p>hvilke musikgenrer der bliver købt mest i butikken.</p>
+        </div>
+        <div class="graf-container">
+            <canvas id="chart1"></canvas>
+        </div>
+    </section>
+
+    <section class="graf-sektion reverse">
+        <div class="graf-container">
+            <canvas id="chart2"></canvas>
+        </div>
+        <div class="tekst">
+            <h2>Anden graf</h2>
+            <p>Denne graf viser...</p>
+        </div>
+    </section>
+
 </main>
 
 <script src="main.js"></script>

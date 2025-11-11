@@ -1,5 +1,5 @@
 // Graf over de 10 mest købte genrer
-const ctx = document.querySelector('#chart');
+const ctx = document.querySelector('#chart1');
 const labels = [
     'Rock',
     'Latin',
