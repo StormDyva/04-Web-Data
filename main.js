@@ -76,7 +76,7 @@ new Chart(ctx, {
             },
             title: {
                 display: true,
-                text: 'Antal købte musiknumre fordelt pr. genre',
+                text: 'Top 10 mest købte genrer',
                 font: {
                     size: 18
                 }
@@ -101,4 +101,5 @@ new Chart(ctx, {
     },
     plugins: [ChartDataLabels]
 });
+
 
