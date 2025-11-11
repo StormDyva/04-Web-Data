@@ -43,8 +43,8 @@ new Chart(ctx, {
             data: tracksPurchasedPrGenre,
             backgroundColor: backgroundColors,
             borderColor: borderColors,
-            borderWidth: 1,
-            borderRadius: 8
+            borderWidth: 0,
+            borderRadius: 2
         }]
     },
     options: {
@@ -101,3 +101,4 @@ new Chart(ctx, {
     },
     plugins: [ChartDataLabels]
 });
+
