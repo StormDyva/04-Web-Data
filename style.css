@@ -1,14 +1,16 @@
 body {
     font-family: "Georgia", serif;
     background-color: #fdf6ee; /*kildehenvisning: https://chatgpt.com/c/69139b22-b36c-832a-a53f-4265d8614248*/
+    margin: 0;
 }
 
 /*----------------nav section----------------*/
 
 header {
-    background-color: #fdf6ee;
+    background-color: #F5F1EC;
     display: flex;
     align-items: center; /*note: logo og h3 centreres midt på aksen*/
+    justify-content: space-between;
     border-bottom: 1px solid #eee; /*note: den grå streg under header*/
     position: sticky; /*note: header bliver selvom scroll - hører sammen med top*/
     top: 0; /*note: placerer header fast øverst*/
@@ -25,11 +27,19 @@ h3{
     margin-left: 60px;
 }
 
+a{
+    font-size: 1.2rem;
+     margin-right: 80px;
+}
+
+
+
 /*----------------main section----------------*/
 h1 {
     text-align: center; /*note: centrerer h1*/
-    padding: 20px; /*note: luft over h1*/
-    margin-bottom: 40px; /*note: luft under h1 */
+    padding: 20px;
+    margin-top: 60px;
+    margin-bottom: 100px; /*note: luft under h1 */
     font-size: 2.5rem;
 }
 
@@ -50,6 +60,7 @@ main {
     background: white;
     border-radius: 20px;
     overflow: hidden; /*note: gemmer indhold, der stikker ud*/
+    height: 400px;
 }
 
 .text-genre {
@@ -80,10 +91,10 @@ main {
 .tracks{
     display: flex;  /*note: lægger tekst og graf ved siden af hinanden*/
     align-items: stretch;   /*note: giver begge sider samme højde/bredde*/
-    flex-direction: row-reverse;
     background-color: white;
     border-radius: 20px;
     overflow: hidden;    /*note: gemmer indhold, der stikker ud*/
+    pad
 }
 
 .text-tracks{
@@ -105,6 +116,24 @@ main {
 }
 
 /*--footer--*/
+
 footer{
     background-color: #F5F1EC;
+    padding: 40px;
+    margin-top: 35px;
+}
+
+h3{
+font-size: 1.4rem;
+margin-bottom: 35px;
+          
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin: 25px;
+    font-size: 1rem;
 }
