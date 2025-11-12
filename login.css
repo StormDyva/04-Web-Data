@@ -1,0 +1,43 @@
+body {
+    font-family: "Georgia", serif;
+    margin: 2;
+    background-color: #fae8cc;
+    color: #000;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+/* ændre size for alle labels*/
+
+label {
+    font-size: 20px;
+}
+
+
+input {
+    font-size: 16px;
+}
+
+button {
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+
+body {
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+
