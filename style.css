@@ -1,66 +1,110 @@
 body {
     font-family: "Georgia", serif;
-    margin: 0;
+    background-color: #fdf6ee; /*kildehenvisning: https://chatgpt.com/c/69139b22-b36c-832a-a53f-4265d8614248*/
+}
+
+/*----------------nav section----------------*/
+
+header {
     background-color: #fdf6ee;
-    color: #000;
+    display: flex;
+    align-items: center; /*note: logo og h3 centreres midt på aksen*/
+    border-bottom: 1px solid #eee; /*note: den grå streg under header*/
+    position: sticky; /*note: header bliver selvom scroll - hører sammen med top*/
+    top: 0; /*note: placerer header fast øverst*/
+    padding: 20px; /*note: giver luft*/
 }
 
+.nav-container{
+    display: flex;
+    align-items: center;
+}
+
+h3{
+    font-size: 1.2rem;
+    margin-left: 60px;
+}
+
+/*----------------main section----------------*/
 h1 {
-    text-align: center;
-    margin-top: 40px;
-    font-weight: bold;
+    text-align: center; /*note: centrerer h1*/
+    padding: 20px; /*note: luft over h1*/
+    margin-bottom: 40px; /*note: luft under h1 */
+    font-size: 2.5rem;
 }
 
+/*note: vi bruger main for at placerer sektionerne lodret*/
 main {
     display: flex;
-    flex-direction: column;
-    gap: 60px;
-    margin: 50px auto;
-    max-width: 1200px;
+    flex-direction: column; /*note: lægger sektionerne under hinanden, fra top til bund */
+    gap: 50px; /*note: laver luft mellem de to sektioner*/
+    margin: 50px auto; 
+    max-width: 1200px; /*note: gør at indholdet ikke fylder hele skærmen */
 }
 
-/* Hver sektion */
-.graf-sektion {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    background-color: #fff;
+/*--graf 1 om musikgenre--*/
+
+.genre {
+    display: flex; /*note: lægger tekst og graf ved siden af hinanden*/
+    align-items: stretch; /*note: giver begge sider samme højde/bredde*/
+    background: white;
     border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden; /*note: gemmer indhold, der stikker ud*/
 }
 
-/* Tekstfeltet i blå */
-.tekst {
-    flex: 1;
+.text-genre {
+    background-color: #23206e; 
+    color: white;
+    padding: 80px;
+    display: flex;
+    flex-direction: column; /*note: lægger h2 og p under hinanden */
+    justify-content: center; /*note: centrerer h2 og p*/
+}
+.text-genre h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.text-genre p {
+    font-size: 1rem;                
+}
+
+.chart-genre {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 80px;
+}
+/*--graf 2 om tracks--*/
+
+.tracks{
+    display: flex;  /*note: lægger tekst og graf ved siden af hinanden*/
+    align-items: stretch;   /*note: giver begge sider samme højde/bredde*/
+    flex-direction: row-reverse;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;    /*note: gemmer indhold, der stikker ud*/
+}
+
+.text-tracks{
     background-color: #23206e;
-    color: #fff;
-    padding: 60px 50px;
+    color: white;
+    padding: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.tekst h2 {
+.text-tracks h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
 
-.tekst p {
+.text-tracks p{
     font-size: 1rem;
 }
 
-/* Grafområdet */
-.graf-container {
-    flex: 1.5;
-    background-color: #fff;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Den anden sektion spejles */
-.graf-sektion.reverse {
-    flex-direction: row-reverse;
+/*--footer--*/
+footer{
+    background-color: #F5F1EC;
 }
