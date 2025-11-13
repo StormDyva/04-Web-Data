@@ -168,3 +168,17 @@ footer li {
     margin: 25px;
     font-size: 1rem;
 }
+
+/*--style af knap--*/
+a {
+    padding: 8px 14px;
+    border-radius: 6px;
+    background: #23206e;
+    color: #F5F1EC;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #121242;
+    font-size: 1.3em;
+}
