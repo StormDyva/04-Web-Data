@@ -47,7 +47,7 @@ h1 {
 main {
     display: flex;
     flex-direction: column; /*note: lægger sektionerne under hinanden, fra top til bund */
-    gap: 50px; /*note: laver luft mellem de to sektioner*/
+    gap: 120px; /*note: laver luft mellem de to sektioner*/
     margin: 50px auto; 
     max-width: 1200px; /*note: gør at indholdet ikke fylder hele skærmen */
 }
@@ -90,11 +90,10 @@ main {
 
 .tracks{
     display: flex;  /*note: lægger tekst og graf ved siden af hinanden*/
-    align-items: stretch;   /*note: giver begge sider samme højde/bredde*/
+    flex-direction: column;   /*note: giver begge sider samme højde/bredde*/
     background-color: white;
     border-radius: 20px;
     overflow: hidden;    /*note: gemmer indhold, der stikker ud*/
-    pad
 }
 
 .text-tracks{
@@ -114,6 +113,14 @@ main {
 .text-tracks p{
     font-size: 1rem;
 }
+
+.chart-tracks{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 80px;
+}
+
 
 /*--footer--*/
 
