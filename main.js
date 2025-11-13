@@ -142,7 +142,7 @@ new Chart(ctx2, {
         },
         plugins: {
             title: {
-                display: true,
+                display: false,
                 text: 'Antal musiknumre købt pr. land',
                 font: {size: 18}
             },
@@ -195,6 +195,7 @@ new Chart(ctx2, {
     },
     plugins: [ChartDataLabels]
 });
+
 
 
 
