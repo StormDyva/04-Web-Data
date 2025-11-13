@@ -1,16 +1,15 @@
 const button = document.querySelector('button');
+const enameInput = document.querySelector('#ename');
 const fnameInput = document.querySelector('#fname');
-const lnameInput = document.querySelector('#lname');
-const bdateInput = document.querySelector('#bdate');
 const passInput  = document.querySelector('#pass');
 
 button.addEventListener('click', function (e) {
     e.preventDefault(); // hvis knappen ligger i en <form>
 
-    console.log(fnameInput.value, lnameInput.value, bdateInput.value, passInput.value);
+    console.log(enameInput.value, fnameInput.value, passInput.value);
 
-    if (!fnameInput.value || !lnameInput.value) {
-        alert('Udfyld for- og efternavn');
+    if (!enameInput.value || !fnameInput.value || !passInput.value) {
+        alert('Alle felter skal udfyldes');
         return;
     }
 
