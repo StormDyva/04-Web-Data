@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CHINOOK</title>
+    <title>aflevering 13/11</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="icons8-musical-note-30.png" sizes="32x32" type="image/png">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
@@ -33,29 +33,63 @@
 
     <h1>CHINOOK MUSIC</h1>
 
+    <div>
+        <p>Denne side præsenterer de vigtigste salgstal for vores musikbutik.</p>
+        <p>Formålet er at give dig som medarbejder et hurtigt og overskueligt overblik over:</p>
+        <ul>
+            <li>Hvilke musikgenrer vores kunder køber mest</li>
+            <li>Hvilke lande i verden der genererer det største salg</li>
+        </ul>
+    </div>
+
     <!-- SEKTION 1 -->
     <section class="genre">
         <div class="text-genre">
             <h2>Top 10 mest købte genrer</h2>
-            <p>Hvilke musikgenrer der bliver købt mest i butikken.</p>
+            <p>Grafen nedenfor viser, hvilke musikgenrer vores kunder foretrækker.
+                <br>
+                <br>
+                Tallene er baseret på det samlede antal solgte tracks i vores butik.</p>
         </div>
 
         <div class="chart-genre">
-            <canvas id="chart1"></canvas>
+            <canvas id="chart1" width="600" height="350"></canvas>
         </div>
     </section>
 
     <!-- SEKTION 2 -->
     <section class="tracks">
         <div class="text-tracks">
-            <h2>Anden graf</h2>
-            <p>Denne graf viser f.eks. fordelingen af salg pr. måned.</p>
+            <h2>Slag fordelt på lande</h2>
+            <p>Denne graf viser, hvor vores salg kommer fra geografisk.
+                <br>
+                <br>
+                Hver sektor repræsenterer et land, og farverne viser de forskellige verdensdele.</p>
         </div>
 
         <div class="chart-tracks">
             <canvas id="chart2" width="800" height="650"></canvas> <!--*note: få grafen større-->
         </div>
     </section>
+
+    <!-- Opsummering -->
+    <div class="summary">
+        <h2>Opsummering</h2>
+        <p>
+            Ud fra graferne, er det tydeligt at Rock er den bedst sælgende genre, hvor Pop udgør den mindste del af
+            salget.
+            Dermed bør Rock fortsat prioriteres i sortiment og kampagner.
+            <br>
+            Vi kan se at vores største kunder i overvejende grad er fra USA med en andel af det samlede salg på ~45%.
+            <br>
+            <br>
+            Ved at forstå kundernes musikpræferencer og de geografiske salgsmønstre kan vi optimere vores sortiment,
+            planlægge målrettet markedsføring for genrer der har succes og eventuelt opdage ny vækstområder, som
+            eksempelvis Europa, hvor mange forskellige lande allerede køber vores varer, men ikke i så stor volumen som
+            USA.
+        </p>
+    </div>
+
 </main>
 
 <footer>
@@ -68,7 +102,6 @@
         </ul>
     </div>
 </footer>
-
 
 
 <!-- Forbinder til JavaScript-filen, som laver graferne -->
