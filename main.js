@@ -133,7 +133,7 @@ new Chart(ctx2, {
     },
     options: {
         responsive: true,
-        maintainAspectRatio: true,
+        maintainAspectRatio: false,
         scales: {
             r: {
                 grid: {color: 'rgba(0, 0, 0, 0.05)'},
