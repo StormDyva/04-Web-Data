@@ -70,7 +70,7 @@ new Chart(ctx, {
                 display: false
             },
             title: {
-                display: true,
+                display: false,
                 text: 'Top 10 mest købte genrer',
                 font: {
                     size: 18
@@ -195,6 +195,7 @@ new Chart(ctx2, {
     },
     plugins: [ChartDataLabels]
 });
+
 
 
 
