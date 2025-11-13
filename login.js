@@ -15,5 +15,5 @@ button.addEventListener('click', function (e) {
     }
 
     // Går til vores anden HTML
-    window.location.href = 'index.html';
+    window.location.href = 'app.html';
 });

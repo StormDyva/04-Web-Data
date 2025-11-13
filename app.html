@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>aflevering 13/11</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icons8-musical-note-30.png" sizes="32x32" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="nav-container">
+        <svg width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+             stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18V5l12-2v13"></path>
+            <path d="M6 15a3 3 0 1 0 0 6 3 3 0 1 0 0-6z"></path>
+            <path d="M18 13a3 3 0 1 0 0 6 3 3 0 1 0 0-6z"></path>
+            <!--kildehenvisning til icon: https://iconer.app/feather/-->
+        </svg>
+        <h3>CHINOOK</h3>
+    </div>
+
+
+    <a rel="login" href="index.html">Login</a> <!--*note: link til at gå tilbage til login hjemmeside-->
+
+</header>
+
+<main>
+
+    <h1>CHINOOK MUSIC</h1>
+
+    <!-- SEKTION 1 -->
+    <section class="genre">
+        <div class="text-genre">
+            <h2>Top 10 mest købte genrer</h2>
+            <p>Hvilke musikgenrer der bliver købt mest i butikken.</p>
+        </div>
+
+        <div class="chart-genre">
+            <canvas id="chart1"></canvas>
+        </div>
+    </section>
+
+    <!-- SEKTION 2 -->
+    <section class="tracks">
+        <div class="text-tracks">
+            <h2>Anden graf</h2>
+            <p>Denne graf viser f.eks. fordelingen af salg pr. måned.</p>
+        </div>
+
+        <div class="chart-tracks">
+            <canvas id="chart2"></canvas>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div>
+        <h3>Informationer</h3>
+        <ul>
+            <li>Storm Dyva Touborg |<span>stto1000@stud.ek.dk</span></li>
+            <li>Mathias Hartung Borup |<span>mabo0015@stud.ek.dk</span></li>
+            <li>Astrid Sofie Falkenberg |<span>asfa0002@stud.ek.dk</span></li>
+        </ul>
+    </div>
+</footer>
+
+
+
+<!-- Forbinder til JavaScript-filen, som laver graferne -->
+<script src="main.js"></script>
+</body>
+</html>
