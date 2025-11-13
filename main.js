@@ -57,7 +57,7 @@ new Chart(ctx, {
             },
             x: {
                 title: {
-                    display: true,
+                    display: false,
                     text: 'Genre'
                 },
                 grid: {
@@ -80,7 +80,7 @@ new Chart(ctx, {
                 enabled: true
             },
             datalabels: {
-                display: function(context) {
+                display: function (context) {
                     // Viser kun labels for de første 3 søjler
                     return context.dataIndex < 3;
                 },
